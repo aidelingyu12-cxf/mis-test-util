@@ -1,0 +1,69 @@
+/splashAdv/show:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '首页弹窗'
+
+/gray_release/show:
+  params:
+    {
+      'version':1.1.8
+    }
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '灰度测试'
+
+/popup/show:
+  params:
+    [
+      'current1': {
+        'type': 1
+      },
+      'current2': {
+        'type': 2
+      }
+    ]
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '弹窗显示'
+
+/miniProgram/banner/configsToGet:
+  params:
+    [
+      'current1': {
+        'mgoKey': GameLink
+      },
+      'current2': {
+        'mgoKey': bargainGoods
+      },
+      'current3': {
+        'mgoKey': MinipGrouponActivityIds
+      },
+      'current4': {
+        'mgoKey': MinipGrouponActivityPageTopBanner
+      }
+    ]
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '配置项查询'
+
+/account/update_token:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '获取token'
+
+/giftcard/giftCardNum:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '礼品卡'
+
+/slideshow/getAPPSlideshowList:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '幻灯片'

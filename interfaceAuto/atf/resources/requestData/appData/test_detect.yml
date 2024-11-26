@@ -1,0 +1,228 @@
+/skin/detection/guide:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '打开检测引导'
+
+/skin/detection/get_watch_guide_video_status:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '是否已经查看过检测引导视频'
+#/skin/detection/get_watch_guide_video_status:
+
+/questionaire/have_valid_questionaire:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '开始检测前验证是否有已填写的报告'
+
+/questionaire/template:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '获取问卷信息'
+
+/questionaire/answer:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '开始填写新问卷'
+
+/skin/care/member/mobile/solution/report/list:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '查看肌肤档案列表'
+
+/activities/report_banner:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '获取指定肌肤档案'
+
+/skin/records_head_image:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '查询用户肌肤图片'
+
+/questionaire:
+  payload:
+    {
+      "surveyId": "309d50090d1f47e4a7f0853048aba687",
+      "contents": {
+        "9ddf7a71286c4db29af32bd199ee5584": {
+          "type": "S",
+          "value": "3e0cf348d2b04fd28ef22142dad72b71"
+        },
+        "39e05032ee2a4226ad4d6c0966496f2b": {
+          "type": "S",
+          "value": "6a561e093bf54d898bc4edb74827204b"
+        },
+        "937df344cfe84c55baa3978892ba248e": {
+          "type": "S",
+          "value": "6ffb2135ede54732b91348c9b75a031d"
+        },
+        "d637a03d63a5435090de859999f84861": {
+          "type": "A",
+          "value": {
+            "7a46a3da9abe458d9550a9518a3ca0d2": "3",
+            "efe8be822ad442fba9a7fe22275f1bfe": "3",
+            "b55093c7fc2a466f8678dff5c00a8e20": "3",
+            "19bf7728ebc34c1298e2c528db4e087c": "3",
+            "3612c616b80c4f85bf27df89b8513df6": "3"
+          }
+        }
+      }
+    }
+  method: 'POST'
+  headers: ''
+  token: 1
+  description: '提交问卷'
+
+/skin/care/member/mobile/solution/report/detail:
+  params:
+    {
+      "treatmentId":  "34f6fae4a40e4f03b95f3b4c01b11afb",
+      "taskId": "d3fe834149ae441ca7931758d11b60ab"
+    }
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '获取指定肌肤档案详情'
+
+/package/by_skin_type_code:
+  params:
+    {
+      "skinTypeCode": "703",
+      "subId": "70311"
+    }
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '报告页查询MIS套餐'
+
+/activities/new_activity:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '报告页Banner配置'
+
+/new_activities/detail:
+  params:
+    {
+      'id': '7f6313efa4d243e387cb3a5aa8a5341d'
+    }
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '报告页活动页面配置'
+
+/new_activities/check:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '新活动检查'
+
+/account/customer_info:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '获取用户信息'
+
+#/skin/care/member/mobile/solution/report/phase4_list:
+#  method: 'GET'
+#  headers: ''
+#  token: 1
+#  description: '肌肤档案列表'
+#
+#/skin/care/member/mobile/solution/report/phase4_detail:
+#  params:
+#    {
+#      'taskId': '35d9dfd2f1e048c4870ff3b5c1c20a41',
+#      'treatmentId':'ec554d0e9c3041898e8b59b0f8edd1ea'
+#    }
+#  method: 'GET'
+#  headers: ''
+#  token: 1
+#  description: '报告详情'
+#
+#/skin/records_head_image_phase4:
+#  method: 'GET'
+#  headers: ''
+#  token: 1
+#  description: '报告详情2'
+#
+#/customized/task/goods/listBySkuIds:
+#  payload:
+#    {
+#      "taskId": "35d9dfd2f1e048c4870ff3b5c1c20a41",
+#      "makerId": "e354c59c02cc496f868f0b8eabb262db",
+#      "skinTypeCode": "702",
+#      "checkSequence": 2,
+#      "current": 1,
+#      "pageSize": 10000
+#    }
+#  method: 'PUT'
+#  headers: ''
+#  token: 1
+#  description: '定制方案查询商品'
+#
+#/customized/task/goods/listByTaskId:
+#  payload:
+#    {
+#      "taskId": "35d9dfd2f1e048c4870ff3b5c1c20a41",
+#      "symptomScoreList": [ {
+#        "name": "水油",
+#        "code": "OIL",
+#        "score": 86
+#      }, {
+#        "name": "暗沉",
+#        "code": "SPOT",
+#        "score": 96
+#      }, {
+#        "name": "衰老",
+#        "code": "WRINKLE",
+#        "score": 94
+#      }, {
+#        "name": "痤疮",
+#        "code": "PIMPLE",
+#        "score": 95
+#      }, {
+#        "name": "耐受",
+#        "code": "INFLAMMATION",
+#        "score": 80
+#      } ],
+#      "skinTypeCode": "702",
+#      "current": 1,
+#      "pageSize": 10000
+#    }
+#  method: 'PUT'
+#  headers: ''
+#  token: 1
+#  description: '护肤推荐查询商品'
+#
+#/customized/task/goods/cartListByTaskId:
+#  params:
+#    {
+#      "taskId": "35d9dfd2f1e048c4870ff3b5c1c20a41",
+#      "skuSource":0
+#    }
+#  method: 'GET'
+#  headers: ''
+#  token: 1
+#  description: '根据taskId查询购物车商品'
+#
+#/customized/task/goods/save/cartList:
+#  payload:
+#    {
+#      "taskId": "35d9dfd2f1e048c4870ff3b5c1c20a41",
+#      "skuId": "ff80808180650f5d018068de76160049",
+#      "updateFlag": "1",
+#      "skuSource": "0"
+#    }
+#  method: 'PUT'
+#  headers: ''
+#  token: 1
+#  description: '保存商品到购物车'

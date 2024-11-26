@@ -1,0 +1,149 @@
+/config/profile:
+/member/profile:
+/login:
+  payload:
+    {
+      "k": "DR0op5Q9isZOJ9B0sUXLvGVwvdJG/We/5FR5eQUIZIdYj2dD8V54LOp5KGWD4fol3LP0O2wq59IKgV9ymj0GNOk2wm03dp2lNv3FzZfVwB7qQiYXuxb71LU77eK/iIufcfdPLUrfT1bkGj7LcqvFSeLuaalQ6X7fUsTkNP9ssJPTOVQsFazSQoPWzEKU4giwFV8E/TnLGi2p+iMFY0ivM6ixQJihsXVWQ5gq5meyy9sGs6bGn2wGyP2J3dlLfZKwHkIqjHeBKzsgxYEYXHwqK3ksnLRCLeQvjQMCoFuIzMPzXrtlddf+rs0S8x/FwApXmlQXgcVH1aJsv1q7a/o8YA==",
+      "v": "r7BHLKi46oImqkoU2j5cfmqhuJCToj8wPCah52CX+vwefdYXUA0j6Ullo328hkoVhW8Krwf/DHoSSHFI4U/HwL0OvdLiBGN0P7qs/t0KPpfwDefInFs8ZJzHlL5sRsfn7i8dOREaIafm3MGMDQQxXO82UY7tQzg5gGTO+lfEErs="
+    }
+/grass/water:
+  payload:
+    {
+      "k": "aOWdmiUQt6AZ/yl6x9fPJ0UB/UFRpN4gIqTSiU65i/cLK0LN9AG07SjcBkmyJEG46VQi3150m1RlXD4KZ3u01FENPbZbl8++tUUgiXQnX/mqBWuWnWoF4E5r+o+kKeX3mh7BMn8T9mU9S+LG2suya71qh5597TrL2CQ+jpHit0urWJ7OGWKAyydUIGS/TSfrgzuCVS6D7vpSBum9VmBoqtslV4jYVqNzHcRSgGVGTuQCf5rjkG0D9f94QbMBoNYYIQCKO4y8qMjC7oyjAR0imXbgHsa8yYlvxOjdrUzBtCLfgLKjzKc4H/vGIDrFSdmmAHQb4VFeySwMVjH8to1BwQ==",
+      "v": "JeJLjJ2LwTijrOGRGzQCOGW4PGLFi8Cm3iIWkt9d1B4Dyhd914xMo+/DfJaFlWp7k79pCiqa+GZyX7FTtH+2TA=="
+    }
+
+/prize/list:
+/grass/list:
+/sign/list:
+/mission/integral/list:
+  payload:
+    {
+      "k": "Ykk+cpb1fcyL/1LPaBUFbT5tlM9hZTv8sEns67yFMRToCodXIT7Q0CRPF16YNG7kaVC1uD0DosNRfIqz/bPcP18mIGmKz/mt3G0D7ldD/0ikprwDoFb1JPdR+7d9Kub5UBNbSANB92bJzZG+xZs0WdJe/f/7P21N9MwjRwj0EmBIlXYk0sBNgi9Y8kFSTyQ9v0ffVZhFajKn+HAbSpcYiOJsRkynh0OfCYtayKf7c08b5fbEMJspbgGUHeN4LnbEifSDHWye3absS3ATT/fsesJTVygPecadrNBsrRA8CAA8B6dVRR8MqSfnHbpIfw7OV4UlfaqrMvvWyLDjAdC18g==",
+      "v": "C7nY/ETpHQZslWEq2G2DcQ=="
+    }
+
+/sign:
+  payload:
+    {
+      "k": "RfsVD5K542VumdsJKZd9hQ3Es3qRy+ayh7FV+KAunW6SUszVGiKPpz5mC5wGjs7ungwU3j3Pv7byQupkZkkKYggA3c9pkreeSQ+luF0TYrAdcfqyluxn2bviav/cqMAVNjJm2uKtTWSXkjrQAQcgedBLFRSVPMXp3c0AsvwjR1XXHtqSwAutoWihnyq8tfORrmX6PefhtP1r3jamcivtTVSAs9inrlmoVaZXwrpLVJP/8eUkrWcPZPwzhWncGmBQZwFig2/fs/TGDJCTRW5k/GkdnGQYa/iLhuunNJ5ZNQUt8iitgVf6uZz9b+y6q+tEnVag6H2Lr9Vn3HohmMU9Jw==",
+      "v": "2l+nEMrus/hTI4wuifFuX5MBkBTtNbTK3b2xmdaCKbgd2R8OXBBGuZwNAIrF3PQLe7BlEtf4aUbeWLFtPHNMMg=="
+    }
+/share/submit:
+  payload:
+    {
+      "k": "KOXdjKSaVORASL/fdzJmGSrY5q7wuOu0QoReYo6iX5U15BqIPbA81nvoTh8w/Tb4bUvV+e9htYEMfTcQNx7gndzraMczu+K6ZHF/V6MUDzuQYca7MfK5tWCetfu7UhZKwLPsU4C+F7ccNNP46tdvGgalO8aMJ/PdRkPLZOznX3gz8ZAxvUaAEy/DOIcfnlSTx4jdOtmogpWlS9ufEVjn/vst3c/UVf7lFw99Zu6gabdxF3N+u3BuL++fKPbVNyYdGhJJH/yl8ie9stBidYV0nIke+2ERL+Q+mb2cQ1kvDx59Nc8Xj8/qi7f9QTUS/2dZPjRL92qnw7k6jzqXxbLV8w==",
+      "v": "gsKugl6W5w5gQLyyQK7WPKbHUMYN1s1PA8GujNc7RIs="
+    }
+/share/complete:
+  payload:
+    {
+      "k": "hJ/k63+CsHwp2pvmm5YC5d8JujbnQ9IuUDcZ5xxGSLHZjdbX5xtn3OE3eBccB/wNxAZBQXeCcDASKi4T3EZwEvXjIcr9Hdxk/T29QR4UyYr6WLpId4ZYxxIL9gVqgQmnAa1ycL1i1tJcfrzLrGHaHhHpFGQZmMnVmNXoOt2vHBcbnpnNgVj2Ruja78EyZ+yRn/JuJhJLSWeYXwSR5pzYj+Z8U2cSrntAgHdEDUtx3/4VEWm9+ZDh5/mr1fXbJeBqwEBRoEmHiuJL4M7QYh/JLmlnaC6XQPg+5FQclX59unSxfqW3xVkHPcSYPpvhVdYtezqhBZe/FlCnCAj0HlGQnQ==",
+      "v": "OsGcZKNvt8FehHvk+s4cmQwAWn2kJG5b6QiiQvXHHLG9UTncv6mPTyYw92HbuTlsp6xoD5dsAo2CjbxgSQ4zvw=="
+    }
+/mission/luck/bag/accept:
+  payload:
+    {
+      "k": "hJ/k63+CsHwp2pvmm5YC5d8JujbnQ9IuUDcZ5xxGSLHZjdbX5xtn3OE3eBccB/wNxAZBQXeCcDASKi4T3EZwEvXjIcr9Hdxk/T29QR4UyYr6WLpId4ZYxxIL9gVqgQmnAa1ycL1i1tJcfrzLrGHaHhHpFGQZmMnVmNXoOt2vHBcbnpnNgVj2Ruja78EyZ+yRn/JuJhJLSWeYXwSR5pzYj+Z8U2cSrntAgHdEDUtx3/4VEWm9+ZDh5/mr1fXbJeBqwEBRoEmHiuJL4M7QYh/JLmlnaC6XQPg+5FQclX59unSxfqW3xVkHPcSYPpvhVdYtezqhBZe/FlCnCAj0HlGQnQ==",
+      "v": "OsGcZKNvt8FehHvk+s4cmQwAWn2kJG5b6QiiQvXHHLG9UTncv6mPTyYw92HbuTlsp6xoD5dsAo2CjbxgSQ4zvw=="
+    }
+/mission/sunshine/list:
+  payload:
+    {
+      "k": "Bjr0hdUh8UGCw78K47AyGWFMC+xHe290usZU/Qto127cdbjesEa0dyXCzn9iFVlfZlkrZOkPrYgmenqwl6/kAdk+TWikDQLUfs/TQpngZUFAEdMC6v+TrHOzbHYZ/1Fkl/8AaF0g4PhKTF/dqpGLfcBWV1ePHIa6jVhJ7jSRAtSy/8WZowcCXn7T4SageuUdr0wO51Qa0vLjz14eUjXux0HNUuoIGt2IdUiIg/3AQWELWU6k5qrWlp0iIFeyngF15Ep+PLfT0PTs9nLCkiHf+1bqnlwf5eK+MAs3dSx5qH8widAsQz3dA4ZAplbR8IhRSLAFYtkgjVL5fRPfSdzDYg==",
+      "v": "Jc4/eFgB3HX8vgrYWg8nFQ=="
+    }
+/grass/choose:    # 选择种子
+  payload:
+    {
+      "k": "eP+cgvz/UrQNN47rOigORquAI6daG4T/VOSKAfKFQYQ/EEDWlJ9X1DcHI/0D6X1XZTiHX+aZXfLy4YlPjeX/pGU5pgIrOkTUOeUZW8OfiexmuouSzMejN/MJlPD4J5+Aw7988Sv0lFpv2SeolvQSckMMiTuiYCJY3Hsr8CkJOlcWjqXTJ4sJTLsgQEUGztbPz/YS1pjEOsgylxDR9ouIV8C/f6upr7OmkglrERqE3TrHj0MKdjap98l9ytf2MhQC+B6p5C+9MUF6UzJK4rM5A2TFF9YsR1eXYULnw6MEVTDLQU1M47y6jMa3kjZ3XLE+AlU8SL9o50XDwiWzj+KPug==",
+      "v": "VXDoxmkUpSKorWLT6sUaKA=="
+    }
+/member/accept/noviceGift:    # 领取种子
+  payload:
+    {
+      "k": "hNqIFjZEJrHbWm9VZU9EpFbHGAdS5j9kPaH+JZq/NkpIUQmOrmnNTSCONSVOyv+MdgxKwsTx2PA/9euhu6kJjZIZMlYi+8IA57pu2ZsIzqjR/uD7mwVSJ+CzI9LtOm4An23ZzWtMY5mx82W86l8Snhda26rHTm4m1sGK8xFLZP8IFEELvNu8zqXspDoC6PuSA9uB+3ZX/7lu8MuecBZOCOFH3ehaKfQpRbm9YnoJ1Cz3SFkZZrS2rDZf8WSe2+CtN1qaVIoAfc7PsUGFZtgRS2MSATJL3Wvo+s+RVYtH+9nk6GrdXlJkMvsN+R+a1BGKrfZ+pxy7xJCbsFVTsmIrOg==",
+      "v": "UF1TqyWR8+SdMwPBs0z2hRAIH+nidV3PuYR3gzSnzkpeX6bQjxhYV5dJYr0CsqKwZ7HWHgIajG1CQjVOEm8wNA=="
+    }
+
+/mission/complete/game/notice:
+  payload:
+    {
+      "k": "BxFrf1VEyxUGRyap6Z6sB7E7zJP3NJZQeTDQ9d759661xcN/HI3VwN2MY6sHoohPUBXq9j5Z1YZ9atZKJXoD9z4VgNaYqxE6Rb2Vhxjzl24Ot7BLqgTEyT/OmX5A5LrUFAKuPB8CYG4aKTQqtUJqCm1EdTyu9/G3BMADg5reBqSLG365dGH2drh+8TaWxs50MueH3yfnVknYquGap3MUloiC9BPi6CWMpgrm0zahE9mR4XE+b09pYxiCrFgGwIdr1oyXmdqO+wPvRulTvpdTUuQH2wuN+3KlS4KKnJzmFr9Q/m183JrS7LVqn3Bh9M2MsYyx4lfcVes0UW+bfSGdrA==",
+      "v": "PJRlPCuLnf55vreAhDHq8C8bVczesrpKLnjQQx424DPFX7ZwdJmD8clhT66tuqMokjer44rGAVMq5iFd7ofEPQ=="
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      #/skin/detection/guide:
+#/skin/detection/get_watch_guide_video_status:
+#/questionaire/have_valid_questionaire:
+#/questionaire/template:
+#/questionaire/answer:
+#/skin/care/member/mobile/solution/report/list:
+#/activities/report_banner:
+#/skin/records_head_image:
+#/questionaire:
+#  payload:
+#    {
+#      "surveyId": "309d50090d1f47e4a7f0853048aba687",
+#      "contents": {
+#        "9ddf7a71286c4db29af32bd199ee5584": {
+#          "type": "S",
+#          "value": "3e0cf348d2b04fd28ef22142dad72b71"
+#        },
+#        "39e05032ee2a4226ad4d6c0966496f2b": {
+#          "type": "S",
+#          "value": "6a561e093bf54d898bc4edb74827204b"
+#        },
+#        "937df344cfe84c55baa3978892ba248e": {
+#          "type": "S",
+#          "value": "6ffb2135ede54732b91348c9b75a031d"
+#        },
+#        "d637a03d63a5435090de859999f84861": {
+#          "type": "A",
+#          "value": {
+#            "7a46a3da9abe458d9550a9518a3ca0d2": "3",
+#            "efe8be822ad442fba9a7fe22275f1bfe": "3",
+#            "b55093c7fc2a466f8678dff5c00a8e20": "3",
+#            "19bf7728ebc34c1298e2c528db4e087c": "3",
+#            "3612c616b80c4f85bf27df89b8513df6": "3"
+#          }
+#        }
+#      }
+#    }
+#
+#/skin/care/member/mobile/solution/report/detail:
+#  params:
+#    {
+#      "treatmentId":  "cdfbca8d1c6640649d0c6950417ebf4c",
+#      "taskId": "2e8128f28e29483ebc064be04be6d219"
+#    }
+#
+#/package/by_skin_type_code:
+#  params:
+#    {
+#      "skinTypeCode": "702",
+#      "subId": 2
+#    }
+#
+#/activities/new_activity:
+#
+#/new_activities/detail:
+#  params:
+#    {
+#      'id': '7f6313efa4d243e387cb3a5aa8a5341d'
+#    }
+#
+#/new_activities/check:

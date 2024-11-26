@@ -1,0 +1,174 @@
+/banner/pageList:
+  params:
+    {
+      'current': 1,
+      'pageSize': 5
+    }
+  method: 'GET'
+  headers: ''
+  token: 0
+  description: '获取美服泡泡'
+
+/banner/list:
+  method: 'GET'
+  headers: ''
+  token: 0
+  description: '获取首页banner'
+
+/account/get_daily_care_tip:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '获取日常护肤建议'
+
+/stores/commonly:
+  params:
+    [
+      'jixi':{
+        'lat': '44',
+        'lng': '130'
+      },
+      'xinjiang':{
+        'lat': '43.76409',
+        'lng': '87.61586'
+      }
+    ]
+
+/account/update_token:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '更新token'
+
+/article/getAppHomeList:
+  params:
+    {
+      'current': 1,
+      'size': 10
+    }
+  method: 'GET'
+  headers: ''
+  token: 0
+  description: '获取首页配置的文章'
+
+/miniProgram/banner/configsToGet:
+  params:
+    {
+      'mgoKey': 'GameLink'
+    }
+  method: 'GET'
+  headers: ''
+  token: 0
+  description: '获取小游戏配置'
+
+/popup/show:
+  params:
+    {
+      'type': 1
+    }
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '获取首页弹窗广告'
+
+/article/getHotSearchList:
+  params:
+    {
+      'type': 0
+    }
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '获取护肤成分热搜'
+
+/account/update_birth_and_gender:
+  payload:
+    {
+      "birthYear": "2008",
+      "dateOfBirth": "2008-07-05",
+      "gender": "FEMALE"
+    }
+  method: 'POST'
+  headers: ''
+  token: 1
+  description: '更新用户生日与性别信息'
+
+/questionaire:
+  payload:
+    {
+      "surveyId": "309d50090d1f47e4a7f0853048aba687",
+      "contents": {
+        "9ddf7a71286c4db29af32bd199ee5584": {
+          "type": "S",
+          "value": "3e0cf348d2b04fd28ef22142dad72b71"
+        },
+        "39e05032ee2a4226ad4d6c0966496f2b": {
+          "type": "S",
+          "value": "6a561e093bf54d898bc4edb74827204b"
+        },
+        "937df344cfe84c55baa3978892ba248e": {
+          "type": "S",
+          "value": "8482919f15ee431b9ce868d50f4d933c"
+        },
+        "d637a03d63a5435090de859999f84861": {
+          "type": "A",
+          "value": {
+            "efe8be822ad442fba9a7fe22275f1bfe": "2",
+            "7a46a3da9abe458d9550a9518a3ca0d2": "3",
+            "b55093c7fc2a466f8678dff5c00a8e20": "4",
+            "19bf7728ebc34c1298e2c528db4e087c": "3",
+            "3612c616b80c4f85bf27df89b8513df6": "4"
+          }
+        }
+      }
+    }
+  method: 'POST'
+  headers: ''
+  token: 1
+  description: '提交问卷'
+
+/skin/detection/qr_check:
+  payload:
+    {
+      "qrContent": "b5b8745caf4000c572449b94ddfcf7dc6489a136eb986a5cbe3424c77cba037d"
+    }
+  method: 'POST'
+  headers: ''
+  token: 1
+  description: '扫设备二维码获取设备id'
+
+/account/customer_info:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '获取用户信息'
+
+/article/detail/b87381ed:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '获取文章详细信息'
+
+/skin/detection/guide:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '获取用户mis检测引导信息'
+
+/account/get_birth_and_gender:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '获取用户生日与性别信息'
+
+/questionaire/template:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '获取问卷信息'
+
+/skin/detection/task_status/385fe08a23934a639ccc68e2efdc5dde:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '轮询检测结果'

@@ -1,0 +1,59 @@
+def gitUrl = 'http://192.168.165.5/gitlab/cxf/mis-test-utils.git'
+def projectName = 'mis-automation-test'
+def serviceName = 'mis-automation-test'
+def tagName = 'latest'
+
+
+properties([
+        parameters(
+                [
+                        string(defaultValue: 'cxf', description: 'Which code branch do you want to use?', name: 'branchName'),
+                        string(defaultValue: 'latest', description: 'What is the docker image tag?', name: 'tagName'),
+                        string(defaultValue: '1', description: 'How many instances do you need to deploy?', name: 'appInstanceNumber')
+                ]
+        )
+])
+
+node('app_test_mis') {
+        stage('准备环境') {
+            try {
+                sh "rm -rf ./*"
+            } catch (error) {
+                throw error
+                currentBuild.result = "FAILED"
+            }
+        }
+        stage('下载代码') {
+            try {
+                git([url: gitUrl, branch: "${params.branchName}", credentialsId: 'gitlab_root'])
+            } catch (error) {
+                throw error
+                currentBuild.result = "FAILED"
+            }
+        }
+        stage('打包') {
+            try {
+                sh "zip -q -r automation.zip * -x Dockerfile -x docker-compose.yml"
+            } catch (error) {
+                throw error
+                currentBuild.result = "FAILED"
+            }
+        }
+        stage('构建镜像') {
+            try {
+                sh "docker build -f Dockerfile -t ${serviceName}:${tagName} ."
+            } catch (error) {
+                throw error
+                currentBuild.result = "FAILED"
+            }
+        }
+        stage('部署应用') {
+            try {
+                sh "docker-compose -f docker-compose.yml -p ${serviceName} down --remove-orphans"
+                sh "docker-compose -f docker-compose.yml -p ${serviceName} up -d"
+            } catch (error) {
+                throw error
+                currentBuild.result = "FAILED"
+            }
+        }
+}

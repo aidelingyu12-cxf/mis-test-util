@@ -1,0 +1,55 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+    simple:
+        format: "%(asctime)s %(levelname)s %(lineno)s, %(message)s"
+        #format: "$message"
+        datefmt: '%F %T'
+        #style: "$"
+handlers:
+    consoleHandler:
+        class: logging.StreamHandler
+        level: DEBUG
+        formatter:  simple
+        stream: ext://sys.stdout
+    errorHandler:
+        class: logging.handlers.RotatingFileHandler
+        level: ERROR
+        formatter: simple
+        filename: F:\py_workstation\interAuto\resources\logger\errors.log
+        maxBytes: 10485760 # 10MB
+        backupCount: 20 #most 20 extensions
+        encoding: utf8
+    criticalHandler:
+        class: logging.handlers.RotatingFileHandler
+        level: CRITICAL
+        formatter: simple
+        filename: F:\py_workstation\interAuto\resources\logger\critical.log
+        maxBytes: 10485760 # 10MB
+        backupCount: 20
+        encoding: utf8
+root:
+    level: INFO
+    handlers: [consoleHandler]
+
+loggers:
+    DEBUG:
+        level: DEBUG
+        handlers: [consoleHandler]
+        propagate: False    # 打开日志记录器
+    WARNING:
+        level: WARNING
+        handlers: [consoleHandler]
+        propagate: False
+    INFO:
+        level: INFO
+        handlers: [consoleHandler]
+        propagate: False
+    ERROR:
+        level: ERROR
+        handlers: [consoleHandler, errorHandler]
+        propagate: False
+    CRITICAL:
+        level: CRITICAL
+        handlers: [consoleHandler, criticalHandler]
+        propagate: False

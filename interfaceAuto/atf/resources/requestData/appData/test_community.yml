@@ -1,0 +1,93 @@
+/article/detail/6ddc9607:
+  method: 'GET'
+  headers: ''
+  token: 0
+  description: '文章详情'
+
+/community/blogs/6ddc9607/like:
+  params:
+    [
+      'current1': {
+         "like": true
+      },
+      'current2': {
+         "like": false
+      }
+    ]
+  method: 'POST'
+  headers: ''
+  token: 0
+  description: '文章点赞/取消点赞'
+
+/article/getAppHomeList:
+  params:
+    [
+      'current1':{
+        "current": "1",
+        "size": "10"
+      },
+      'current2':{
+        "current": "1",
+        "size": "10",
+        "type": 0
+      },
+      'current3':{
+        "current": "1",
+        "size": "10",
+        "type": 1
+      },
+      'current4':{
+        "current": "1",
+        "size": "10",
+        "type": 2
+      },
+      'current5':{
+        "current": "1",
+        "size": "10",
+        "type": 3
+      }
+    ]
+#  params:
+#    {
+#      "current": "1",
+#      "size": "10"
+#    }
+  method: 'GET'
+  headers: ''
+  token: 0
+  description: 'app首页和定制之旅'
+
+/article/getHotSearchList:
+  params:
+    [
+      'current1':{
+        'type':1
+      },
+      'current2':{
+        'type':2
+      }
+    ]
+  method: 'GET'
+  headers: ''
+  token: 0
+  description: '探索发现/综合热搜'
+
+/article/detail/bc3299f3b2bc98b5e894e3b771b43a75:
+  method: 'GET'
+  headers: ''
+  token: 0
+  description: '文章详情'
+
+/article/addReadNum/c88493a6:
+  payload:
+    {
+      "headers":
+       {
+        "Authorization": "Bearer eyJhbGciOiJSUzUxMiJ9.eyJwaG9uZSI6IjE3NzY2MDA4MzI4IiwibmFtZSI6IumAgeS9oOWcqCIsInVzZXJUeXBlIjoibzJvX21lbWJlciIsImlkIjoiNzhhOWVkMzU2YjU4NDliYzhjNGJjNjI0NjBkZTUyOGEiLCJtZW1iZXJzaGlwSWQiOiI3OGE5ZWQzNTZiNTg0OWJjOGM0YmM2MjQ2MGRlNTI4YSIsIm1ha2VySWQiOiI5MjBlNjUzMDMwNmQ0Yjk4ODlmYmEwOTNmNzEzMWI1MyJ9.IIrw4hTbIAHHtNV3dmObMtMVoiMvZK2FK-zHNwB6aNCd477MT6wP-SaTN62WcWg6dCmAxnv5j4HZuiJeGhJdIjzv3uzDMMGZXgjh86CogbyGTCk8wd8SdJ2R90kl0Iu_0HY9sXzBFeI_Ntmbo4k6Zo1JAtczC2GK4E7Jd5m5HDY"
+       },
+      "params": null
+    }
+  method: 'PUT'
+  headers: ''
+  token: 0
+  description: '阅读量修改'

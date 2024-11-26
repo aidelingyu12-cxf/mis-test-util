@@ -1,0 +1,134 @@
+/points_mall/goods_page:
+  params:
+    [
+      'current1':{
+        'current': '0',
+        'pageSize': '10',
+        'cateId': '26'
+      },
+      'current2':{
+        'current': '0',
+        'pageSize': '10',
+        'cateId': '9'
+      }
+    ]
+  method: 'GET'
+  headers: ''
+  token: 0
+  description: '获取积分商城某个分类'
+
+/points_trade/page:
+  params:
+    {
+      'current': '0',
+      'pageSize': '10',
+      'orderType': 'POINTS_ORDER'
+    }
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '查询积分商城兑换记录'
+
+/points_mall/goods_detail:
+  params:
+    {
+        'pointsGoodsId': 'ff8080817aaa99d7017aade221190013'
+    }
+  method: 'GET'
+  headers: ''
+  token: 0
+  description: '查询某个积分商品详情'
+
+/customer/points/detail:
+  params:
+    {
+      'current': '0',
+      'pageSize': '10',
+      'type':'0',
+      'date':'2022-07'
+    }
+  method: 'GET'
+  headers: {'phone': '13260633273'}
+  token: 1
+  description: '我的积分详情'
+
+/points_trade/detail:
+  params:
+    {
+      'pointsTradeId': '118682991946739712'
+    }
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '积分商品订单详情'
+
+/sign/receive_task_rewards:
+  payload:
+    {
+      "id": "61e5298a2d08f0e1dd5a0d5e"
+    }
+  method: 'POST'
+  headers: ''
+  token: 1
+  description: '接收任务奖励'
+
+/sign:
+  method: 'POST'
+  headers: ''
+  token: 1
+  description: '签名'
+
+/points_mall/pageCoupon:
+  payload:
+    {
+      "pageNum": 0,
+      "pageSize": 10000
+    }
+  method: 'POST'
+  headers: {"phone": "13260633273"}
+  token: 1
+  description: '积分兑换优惠卷列表'
+
+/sign/reward_list:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '奖励清单'
+
+#/points_mall/fetchPointsCoupon:
+#  params:
+#    {
+#      "pointsCouponId":2
+#    }
+#  method: 'GET'
+#  headers: {"phone": "13260633273"}
+#  token: 1
+#  description: '积分领取优惠卷'
+
+/sign/points_tasks:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '积分任务'
+
+#/points_trade/commit:
+#  payload:
+#    {
+#      "pointsGoodsId": "ff8080817aaa99d7017aade221190013",
+#      "consigneeId": "ff808081820215e10182142f2c60007c",
+#      "consigneeAddress": "国盛中心soho1云南白药健康品有限公司",
+#      "consigneeUpdateTime": "2022-07-08 13:46:08",
+#      "num": 1,
+#      "packageFlag": 0,
+#      "buyerRemark": ""
+#    }
+#  method: 'POST'
+#  headers: ''
+#  token: 1
+#  description: '兑换商品'
+
+/points_mall/recommend_goods:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '获取随机10种积分商品列表(推荐商品)'

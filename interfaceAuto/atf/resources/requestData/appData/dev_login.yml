@@ -1,0 +1,53 @@
+https://resource.caizhiji.com.cn/protocol/user-protocol.html:
+  method: 'GET'
+  headers: ''
+  token: 0
+  description: '获取用户协议'
+
+https://resource.caizhiji.com.cn/protocol/user-protocol.css:
+  method: 'GET'
+  headers: ''
+  token: 0
+  description: '获取用户协议CSS样式'
+
+https://resource.caizhiji.com.cn/protocol/privacy-protocol.html:
+  method: 'GET'
+  headers: ''
+  token: 0
+  description: '获取隐私政策'
+
+https://resource.caizhiji.com.cn/protocol/privacy-protocol.css:
+  method: 'GET'
+  headers: ''
+  token: 0
+  description: '获取隐私协议样式'
+
+/account/login_or_register:
+  payload:
+    [
+        'current1': {
+          "phone_number": "13260633273",
+          "password": "caizhiji2021",
+          "login_type": "password"
+        },
+        'current2': {
+          "phone_number": "13260633273",
+          "sms_verification_code": "888888",
+          "login_type": "smsVerificationCode"
+        },
+        'current3': {
+          "phone_number": "13260633273",
+          "password": "888888",
+          "login_type": "password"
+        },
+    ]
+  method: 'POST'
+  headers: ''
+  token: 0
+  description: '登录'
+
+#/sms/verification_code/17766008328:
+#  method: 'GET'
+#  headers: ''
+#  token: 0
+#  description: '发送短信验证码'

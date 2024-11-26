@@ -1,0 +1,61 @@
+/skin/detection/guide:
+/skin/detection/get_watch_guide_video_status:
+/questionaire/have_valid_questionaire:
+/questionaire/template:
+/questionaire/answer:
+/skin/care/member/mobile/solution/report/list:
+/activities/report_banner:
+/skin/records_head_image:
+/questionaire:
+  payload:
+    {
+      "surveyId": "309d50090d1f47e4a7f0853048aba687",
+      "contents": {
+        "9ddf7a71286c4db29af32bd199ee5584": {
+          "type": "S",
+          "value": "3e0cf348d2b04fd28ef22142dad72b71"
+        },
+        "39e05032ee2a4226ad4d6c0966496f2b": {
+          "type": "S",
+          "value": "6a561e093bf54d898bc4edb74827204b"
+        },
+        "937df344cfe84c55baa3978892ba248e": {
+          "type": "S",
+          "value": "6ffb2135ede54732b91348c9b75a031d"
+        },
+        "d637a03d63a5435090de859999f84861": {
+          "type": "A",
+          "value": {
+            "7a46a3da9abe458d9550a9518a3ca0d2": "3",
+            "efe8be822ad442fba9a7fe22275f1bfe": "3",
+            "b55093c7fc2a466f8678dff5c00a8e20": "3",
+            "19bf7728ebc34c1298e2c528db4e087c": "3",
+            "3612c616b80c4f85bf27df89b8513df6": "3"
+          }
+        }
+      }
+    }
+
+/skin/care/member/mobile/solution/report/detail:
+  params:
+    {
+      "treatmentId":  "cdfbca8d1c6640649d0c6950417ebf4c",
+      "taskId": "2e8128f28e29483ebc064be04be6d219"
+    }
+
+/package/by_skin_type_code:
+  params:
+    {
+      "skinTypeCode": "702",
+      "subId": 2
+    }
+
+/activities/new_activity:
+
+/new_activities/detail:
+  params:
+    {
+      'id': '7f6313efa4d243e387cb3a5aa8a5341d'
+    }
+
+/new_activities/check:

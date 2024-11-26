@@ -1,0 +1,78 @@
+/stores/position:
+  params:
+    {
+      'lat': '31.227730060826357',
+      'lng': '121.38862499455847'
+    }
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '查询当前地区'
+
+/stores/selected:
+  params:
+    {
+      'current': '1',
+      'pageSize': '10',
+      'cityId': '310100',
+      'lat': '31.224348955',
+      'lng': '121.4767528',
+      'type': '1'
+    }
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '查询指定地区的普通门店,TOP3以后的门店'
+
+/stores/hot_store:
+  params:
+    {
+      'cityId': '310100',
+      'lat': '31.224348955',
+      'lng': '121.4767528'
+    }
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '查询指定地区的星选门店'
+
+/stores/detail:
+  params:
+    {
+      'lat': '31.25186362333123',
+      'lng': '121.34967763562824',
+      'id': '45',
+      'type': '1'
+    }
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '查询门店详情'
+
+/stores/city:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '查询所有城市'
+
+#/stores/commonly:
+#  params:
+#    {
+#      'lat': '31.25186362333123',
+#      'lng': '121.34967763562824'
+#    }
+#    method: 'GET'
+#    headers: ''
+#    token: 0
+#    description: '查询当前城市门店信息'
+/store/near_bySkuid:
+  params:
+    {
+      'lat': '31.22759971464971',
+      'lng': '121.38878889135742',
+      'goodsId': 'ff80808181134ef6018114523a480008'
+    }
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '购买会员卡门店自提'

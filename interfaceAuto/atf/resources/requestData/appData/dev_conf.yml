@@ -1,0 +1,29 @@
+DataBase:
+  host: localhost
+  username: root
+  port: 3306
+  password: 123456
+  database: auto
+
+#Domain: https://jkp.baiyaodajiankang.com
+#DomainPath: /mis/test/api/bff/v1
+Domain: https://api.caizhiji.com.cn
+DomainPath: /mis/api/bff/v1
+
+
+APPInterfaceFile:
+  /resources/requestData/appData/interfaceInfo.xlsx
+
+
+
+
+RequestDataPath:
+  /resources/requestData/appData
+ExpectPath:
+  /resources/expect
+LoggerPath:
+  /resources/logger
+
+Authorization:
+   # 生成环境
+  Token: Bearer eyJhbGciOiJSUzUxMiJ9.eyJwaG9uZSI6IjEzMjYwNjMzMjczIiwibmFtZSI6IuWiqOaWl-mxvOWiqOaWl-mxvOWiqOaWl-mxvOWiqOaWl-mxvCIsInVzZXJUeXBlIjoibzJvX21lbWJlciIsImlkIjoiZjMzYWNkMWUwMjM1NDllZWJiMzhhM2E0MjkxMzhkNzIiLCJtZW1iZXJzaGlwSWQiOiJmMzNhY2QxZTAyMzU0OWVlYmIzOGEzYTQyOTEzOGQ3MiIsIm1ha2VySWQiOiJkNDdhYzQ3YTU3MjY0OGZlOGYzN2MzOTY0ZDY5ZTVkMCJ9.q-dNH4DKp_9UX5ActCkCZRhy7lOheb0TmtWhfcOVL5xcVQ_bwhyeiqiZdiz7mHdcKOW9K2X35hi4P4EQQznLL_TtWXlMAm9TzStqzZoLXA54uEZI-fVc7iinjcDN2uEY9bC-sxSwgMoi_P-icYbac-pXPyvK7lyzlNZcMlEkdIA

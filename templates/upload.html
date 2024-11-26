@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.title {
+            margin: 10% 0;
+            text-align: center
+        }
+
+        div.upload {
+            text-align: center
+        }
+
+        .text {
+            color: red;
+            margin: 5% 20%;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">xmind转excel</div>
+    <div class="upload">
+        <form action="/api/convert/" method="post" enctype="multipart/form-data">
+            <input type="file" name="upload_file">
+            <input type="submit" value="提交转换">
+        </form>
+    </div>
+    <div class="text">
+        请注意：上传的xmind文件须严格按照以下格式排版，否则文件无法正常转为excel！<br>
+        中心主题后的子主题分别是：一级标题内容写“维护人”，二级标题写“一级模块”，三级标题写“用例类型”，四级标题写“二级模块”，五级标题写“用例名称”，六级标题写“前置条件”，七级标题写“执行步骤”，八级标题写“预期结果”，九级标题写“优先级”
+    </div>
+</body>
+
+</html>

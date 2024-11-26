@@ -1,0 +1,141 @@
+{
+    "/goods_search_result": {
+        "params": {
+            "key": "\u81ea\u52a8\u5316",
+            "current": "1",
+            "size": "10"
+        },
+        "method": "GET",
+        "headers": "",
+        "token": 1,
+        "description": "\u641c\u7d22\u7ed3\u679c\u5217\u8868"
+    },
+    "/site/shop/cart/add": {
+        "payload": {
+            "goodsInfoId": "ff80808181b288b40181c7cef2fa0685",
+            "goodsNum": 1
+        },
+        "method": "POST",
+        "headers": "",
+        "token": 1,
+        "description": "\u5546\u54c1\u52a0\u5165\u8d2d\u7269\u8f66"
+    },
+    "/site/shop/cart/edit": {
+        "payload": {
+            "goodsId": "ff80808181b288b40181c7cef2fa0685",
+            "num": 2
+        },
+        "method": "PUT",
+        "headers": "",
+        "token": 1,
+        "description": "\u7f16\u8f91\u8d2d\u7269\u8f66\u5546\u54c1"
+    },
+    "/trade/confirm_shopping_cart": {
+        "payload": {
+            "tradeItems": [
+                {
+                    "skuId": "ff80808181b288b40181c7cef2fa0685",
+                    "num": 1
+                }
+            ],
+            "tradeMarketingList": []
+        },
+        "method": "POST",
+        "headers": "",
+        "token": 1,
+        "description": "\u8d2d\u7269\u8f66\u7ed3\u7b97"
+    },
+    "/trade/purchase/preCommit": {
+        "method": "GET",
+        "headers": "",
+        "token": 1,
+        "description": "\u9884\u8d2d\u4e70"
+    },
+    "/trade/commit": {
+        "payload": {
+            "orderSource": "APP",
+            "storeCommitInfoList": [
+                {
+                    "storeId": 123458039,
+                    "payType": 0,
+                    "deliverWay": 1,
+                    "invoiceType": -1
+                }
+            ],
+            "tradeMarketingList": [],
+            "consigneeId": "ff808081815ad99301815c41bc850005",
+            "consigneeAddress": "\u6d77\u5e02 \u4e0a\u6d77\u5e02 \u666e\u9640\u533a \u56fd\u76db\u4e2d\u5fc3soho1\u4e91\u5357\u767d\u836f\u5065\u5eb7\u54c1\u6709\u9650\u516c\u53f8"
+        },
+        "method": "POST",
+        "headers": "",
+        "token": 1,
+        "description": "\u62c9\u8d77\u652f\u4ed8"
+    },
+    "/pay/app/aliPay": {
+        "payload": {
+            "tid": "925664877093847040",
+            "feeCode": "16110100",
+            "channelItemId": 19
+        },
+        "method": "POST",
+        "headers": "",
+        "token": 1,
+        "description": "aliPay\uff08\u652f\u4ed8\u5b9d\u652f\u4ed8\uff09"
+    },
+    "/pay/wxPayUnifiedorderForApp": {
+        "payload": {
+            "tid": 0,
+            "feeCode": "16110100",
+            "channelItemId": 16
+        },
+        "method": "POST",
+        "headers": "",
+        "token": 1,
+        "description": "wxPayUnifiedorderForApp\uff08\u5fae\u4fe1\u652f\u4ed8\uff09"
+    },
+    "/trade/cancel": {
+        "params": {
+            "tid": "125664877361221632"
+        },
+        "method": "GET",
+        "headers": "",
+        "token": 1,
+        "description": "\u53d6\u6d88\u8ba2\u5355"
+    },
+    "/trade/check_goods": {
+        "payload": {
+            "tradeItems": [
+                {
+                    "skuId": "ff80808181b288b40181c7cef2fa0685",
+                    "num": 2
+                }
+            ],
+            "tradeMarketingList": [],
+            "forceConfirm": false
+        },
+        "method": "POST",
+        "headers": "",
+        "token": 1,
+        "description": "\u786e\u8ba4\u5546\u54c1"
+    },
+    "/trade/immediate_buy": {
+        "payload": {
+            "tradeItemRequests": [
+                {
+                    "skuId": "ff80808181b288b40181c7cef2fa0685",
+                    "num": 2
+                }
+            ]
+        },
+        "method": "POST",
+        "headers": "",
+        "token": 1,
+        "description": "\u7acb\u5373\u8d2d\u4e70"
+    },
+    "/pay/record/status/": {
+        "method": "GET",
+        "headers": "",
+        "token": 1,
+        "description": "\u67e5\u8be2\u652f\u4ed8\u7ed3\u679c"
+    }
+}

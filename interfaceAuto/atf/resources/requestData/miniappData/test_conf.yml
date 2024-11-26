@@ -1,0 +1,22 @@
+DataBase:
+  host: localhost
+  username: root
+  port: 3306
+  password: 123456
+  database: auto
+
+Domain: https://testapi.caizhiji.com.cn
+DomainPath: /mis/api/groupon/v1
+#Domain: https://api.caizhiji.com.cn
+#DomainPath: /mis/api/bff/v1
+
+RequestDataPath:
+  /resources/requestData/miniappData
+ExpectPath:
+  /resources/expect
+LoggerPath:
+  /resources/logger
+
+Authorization:
+   # 测试环境
+   Token: eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiI3OGE5ZWQzNTZiNTg0OWJjOGM0YmM2MjQ2MGRlNTI4YSIsInBob25lTnVtYmVyIjoiMTc3NjYwMDgzMjgiLCJvcGVuaWQiOiJvOXRTZTVhUlFUTzh6QWJ5Vzd4NWg2b2lIT2pvIiwibWVtYmVyc2hpcElkIjoiNzhhOWVkMzU2YjU4NDliYzhjNGJjNjI0NjBkZTUyOGEiLCJleHAiOjE2NTg4MjI0ODh9.XwBBmisCXa0kyezTE61G1FhTpgE0WIucDeBo9hkbcLutHgnxjdktUrpkvML327sHM1eU1Tq9qaGfjA-XUVkSMudGrn26hUHCPqbFUsHQ1Kg0629c6asy6WFiOiEhoItjzqduDtHXesnng44iMJsWcixFLkMGRYeYgSQ1wwRw09k

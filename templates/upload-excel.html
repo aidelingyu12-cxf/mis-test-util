@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.title {
+            margin: 10% 0;
+            text-align: center
+        }
+
+        div.upload {
+            text-align: center
+        }
+        .text{
+            color: red;
+            margin: 5% 20%;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">excel转xmind</div>
+    <div class="upload">
+        <form action="/api/convert-to-xmind/" method="post" enctype="multipart/form-data">
+            <input type="file" name="upload_file">
+            <input type="submit" value="提交转换">
+        </form>
+    </div>
+    <div class="text">
+        请注意：上传的excel文件建议按照以下格式排版：第一列为一级模块，第二列为二级模块，第三列为三级模块（如果需要可以一直往后加）；模块名称后面，可以按照用例标题、前置条件、步骤描述、预期结果这类顺序进行排版，
+        方便开发及其他人员理解。 </div>
+
+</body>
+
+</html>

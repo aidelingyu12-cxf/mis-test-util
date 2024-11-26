@@ -1,0 +1,34 @@
+/community/blogs:
+  params:
+      {
+        "current": "1",
+        "pageSize": "10"
+      }
+  method: 'GET'
+  headers: ''
+  token: 0
+  description: '获取社区列表'
+
+/community/blogs/78ed1e76f7fc451b94c6325066c20d29/like?like=false:
+  payload:
+        {}
+  method: 'POST'
+  headers: ''
+  token: 1
+  description: '取消点赞'
+
+/community/blogs/78ed1e76f7fc451b94c6325066c20d29/like?like=true:
+  payload:
+      {
+        "like": true
+      }
+  method: 'POST'
+  headers: ''
+  token: 1
+  description: '点赞'
+
+/community/blogs/78ed1e76f7fc451b94c6325066c20d29:
+  method: 'GET'
+  headers: ''
+  token: 0
+  description: '获取社区详情'

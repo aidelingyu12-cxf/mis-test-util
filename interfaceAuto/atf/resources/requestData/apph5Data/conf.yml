@@ -1,0 +1,30 @@
+DataBase:
+  host: localhost
+  username: root
+  port: 3306
+  password: 123456
+  database: auto
+
+#Domain: https://test-h5.caizhiji.com.cn
+#DomainPath: /mis/test/api/bff/v1
+Domain: http://api-bcy.caizhiji.com.cn
+DomainPath: /ynbyBcyApi/front
+
+
+h5InterfaceFile:
+  /resources/requestData/apph5Data/interfaceInfo.xlsx
+
+
+
+
+
+RequestDataPath:
+  /resources/requestData/apph5Data
+ExpectPath:
+  /resources/expect
+LoggerPath:
+  /resources/logger
+
+Authorization:
+  Token: Bearer eyJhbGciOiJSUzUxMiJ9.eyJwaG9uZSI6IjE4MjA0NTIxMTcxIiwibmFtZSI6IumHh-S5i-axsjExNzEiLCJ1c2VyVHlwZSI6Im8yb19tZW1iZXIiLCJpZCI6ImFlMGY5MDllYTNjMTQ0ZmViNmJhNTI1NWQzMWUzZjQxIiwibWVtYmVyc2hpcElkIjoiYWUwZjkwOWVhM2MxNDRmZWI2YmE1MjU1ZDMxZTNmNDEiLCJtYWtlcklkIjoiMWRjMDIyZGJmMGU0NDNjY2EyNmYzN2I4ZDM0ZGExYWMifQ.gVeYpJq-oGkgcEO3sXOVfAuARNRZMdK7Cr8Q-3bkvXkJw9ZuKnSMBpOs8x1pqK_k-ed-MjIB_Kimb3MDE8JK0aDkj_bLmQ-SnepK04LdYQCnURK_MIWwDpXdeRa5bnUss6XIo6fvj5VceO5PtMym5FmIWI_2CiF87mQJwJkcz8s
+#Token: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJDb2RlIjoiMzNlMDBkZWY0YzcxNGQzNDkwMGFkZjNkOTNlYjQ1ZjUiLCJzdWIiOiJ5bmJ5QmN5IiwiYXVkIjoiIiwiaXNzIjoia2QiLCJleHAiOjE2NDUxNzgyMzE1MTMsImlhdCI6MTY0NTE3MTAzMTUxM30=.767446CCBE28BA7E4EFFD3D4C6EA5CE841CDCA433DEA05CC4E609FAF76FC6BE6

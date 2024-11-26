@@ -1,0 +1,468 @@
+/trade/todo_num:
+  params:
+    {
+      'inviteeId': 'null'
+    }
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '我的订单'
+
+/points_mall/cate_list:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '积分商品类目'
+
+/in_mails/by_user:
+  params:
+    {
+      'current': 1,
+      'pageSize': 10
+    }
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '全部消息'
+
+/account/customer_info:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '查询会员信息'
+
+/in_mails/by_user/all_read:
+  payload:
+    {}
+  method: 'PUT'
+  headers: ''
+  token: 1
+  description: '全部消息已读按钮'
+
+/in_mails/by_user/unread:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '获取全部未读消息'
+
+/account/feedback:
+  payload:
+    {
+      "content": "内部测试--发送问题反馈"
+    }
+  method: 'POST'
+  headers: ''
+  token: 1
+  description: '问题反馈'
+
+/account/info:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '用户详情'
+
+/account/get_birth_and_gender:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '获取用户生日与性别信息'
+
+/account/update_birth_and_gender:
+  payload:
+    [
+      'MALE': {
+        "birthYear": "2000",
+        "dateOfBirth": "2020-02-16",
+        "gender": "MALE"
+      },
+      'FEMALE': {
+        "birthYear": "2021",
+        "dateOfBirth": "2021-09-22",
+        "gender": "FEMALE"
+      }
+    ]
+  method: 'POST'
+  headers: ''
+  token: 1
+  description: '更新用户生日与性别信息'
+
+/account/update_nickname:
+  params:
+    {
+      "nick_name": "自动化账号"
+    }
+  payload:
+    {
+      "nick_name": "自动化账号"
+    }
+  method: 'POST'
+  headers: ''
+  token: 1
+  description: '修改用户昵称'
+
+/app_version/latest:
+  params:
+    [
+      '1.1.1':
+      {
+        'appType': 'IOS',
+        'versionName': '1.1.2'
+      },
+      '1.0.8': {
+        'appType': 'IOS',
+        'versionName': '1.0.8'
+      }
+    ]
+  method: 'GET'
+  headers: ''
+  token: 0
+  description: '获取app版本'
+
+/customer/level/rightsList:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '获取会员等级'
+
+/integration_rule/query_integration_rules:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '获取积分规则'
+
+/customer/address_list:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '获取收货地址'
+
+/customer/address_list/add:
+  payload:
+    {
+      "name": "测试地址--删除",
+      "phone": "17766008328",
+      "provinceId": "310000",
+      "cityId": "310100",
+      "districtId": "310107",
+      "address": "国盛中心soho1云南白药健康品有限公司",
+      "isDefaltAddress": 0
+    }
+  method: 'POST'
+  headers: ''
+  token: 1
+  description: '新增收货地址'
+
+/customer/address_list/edit:
+  payload:
+    {
+      "addressId": "ff808081815ad99301815c41bc850005",
+      "name": "自动化账号",
+      "phone": "17766008328",
+      "provinceId": "310000",
+      "cityId": "310100",
+      "districtId": "310107",
+      "address": "国盛中心soho1云南白药健康品有限公司",
+      "isDefaltAddress": 1
+    }
+  method: 'PUT'
+  headers: ''
+  token: 1
+  description: '编辑收货地址'
+
+/customer/address_list/delete/:
+  method: 'DELETE'
+  headers: ''
+  token: 1
+  description: '删除收货地址'
+
+/customer/default_address/ff808081815ad99301815c41bc850005:
+  method: 'POST'
+  headers: ''
+  token: 1
+  description: '新增默认收货地址'
+
+/coupon/couponCode/list:
+  params:
+    [
+      'current1':{
+        'current': '0',
+        'size': '10',
+        'sortColumn': '',
+        'sortType': 'couponType',
+        'order': '',
+        'isGiftCard': '0'
+      },
+      'current2':{
+        'current': '0',
+        'size': '10',
+        'sortColumn': '',
+        'sortType': 'couponType',
+        'order': '',
+        'isGiftCard': '1'
+      }
+    ]
+  method: 'GET'
+  headers: ''
+  token: 0
+  description: '查询优惠券'
+
+/customer/points/detail:
+  params:
+    {
+      'current': '0',
+      'pageSize': '10'
+    }
+  method: 'GET'
+  headers: {"phone": "17766008328"}
+  token: 1
+  description: '查询积分'
+
+/giftbag/giftGoodsList:
+  params:
+    [
+      'current1':{
+        'type': 'vip'
+      },
+      'current2':{
+        'type': 'platinum'
+      }
+    ]
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '会员大礼包'
+
+/discount_goods/list:
+  params:
+    [
+      'current1':{
+        'current': '1',
+        'size':'4'
+      },
+      'current2':{
+        'current': '1',
+        'size':'10'
+      },
+      'current3':{
+        'current': '2',
+        'size':'10'
+      },
+      'current4':{
+        'current': '3',
+        'size':'10'
+      },
+    ]
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '折扣商品列表'
+
+/vipCard/Info:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '会员卡信息'
+
+/vip/discount_economize:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '会员折扣'
+
+/advertisement/getById/member_center_advertisement:
+  method: 'GET'
+  headers: ''
+  token: 0
+  description: '会员中心广告'
+
+/vip/package_economize:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '会员累积包邮已省次数'
+
+/vip/rights:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '会员权益'
+
+/coupon/coupon_info/list:
+  params:
+    [
+      'current1':{
+        'current':'0',
+        'size':'10',
+        'couponStatus':'0'
+      },
+      'current2':{
+        'current': '0',
+        'size': '10',
+        'couponStatus': '1'
+      },
+      'current3':{
+        'current': '0',
+        'size': '10',
+        'couponStatus': '2'
+      },
+      'current4':{
+        'current': '0',
+        'size': '10',
+        'couponStatus': '3'
+      },
+    ]
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '我的优惠券列表'
+
+/trade/page:
+  params:
+    [
+      'current1':{
+        'current':'1',
+        'pageSize':'10',
+        'payState':'',
+        'flowState':''
+      },
+      'current2':{
+        'current':'1',
+        'pageSize':'10',
+        'payState':'NOT_PAID',
+        'flowState':''
+      },
+      'current3':{
+        'current':'1',
+        'pageSize':'10',
+        'payState':'',
+        'flowState':'AUDIT'
+      },
+      'current4':{
+        'current':'1',
+        'pageSize':'10',
+        'payState':'',
+        'flowState':'DELIVERED'
+      },
+      'current5':{
+        'current':'1',
+        'pageSize':'10',
+        'payState':'',
+        'flowState':'COMPLETED'
+      },
+    ]
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '获取订单列表'
+
+/mPlusActivity/getMPlusActivity:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '查询M+活动介绍页'
+
+/vipCard/singleBuy:
+  payload:
+    {
+      "skuId": "ff8080817e247e90017e29c434fa0472",
+      "storeId": 123458039
+    }
+  method: 'POST'
+  headers: ''
+  token: 1
+  description: 'M+购买会员卡功能'
+
+/giftbag/confirmReceive:
+  payload:
+    {
+      "type": "vip",
+      "addressId": "ff8080817e0bdae1017e2a4e3b610067",
+      "tradeList": [ {
+        "goodsId": "ff8080817e0bdae1017e2a4e3b610067",
+        "num": 1
+      } ]
+    }
+  method: 'POST'
+  headers: ''
+  token: 1
+  description: '领取M+购卡礼包'
+
+#/discount_goods/detail/ff8080817e0bd855017e32d6acdf0170:
+/trade/detail:
+  params:
+    {
+      'tid': '124437579987406848'
+    }
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '获取订单详情'
+
+/account/update_live_city:
+  payload:
+    {
+      "province_code": "310000",
+      "province_name": "上海市",
+      "city_code": "310100",
+      "city_name": "上海市"
+    }
+  method: 'POST'
+  headers: ''
+  token: 1
+  description: '修改常居地'
+
+/coupon/quarterCouponList:
+  params:
+    [
+      'current1':{
+        'name':'ultimoQuarterCoupon'
+      },
+      'current2':{
+        'name':'quarterCoupon'
+      },
+      'current3':{
+        'name':'proximoQuarterCoupon'
+      }
+    ]
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '优惠卷列表'
+
+/account/maker_info:
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '查询是否是创客'
+
+/growthValue/page:
+  params:
+    {
+      'current': 1,
+      'pageSize':10
+    }
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '成长值明细'
+
+#/coupon/grantQuarterCoupon:
+#  params:
+#    {
+#      "couponInfoId": "ff808081806f999201806fb67be40000"
+#    }
+#  method: 'POST'
+#  headers: ''
+#  token: 1
+#  description: '领取优惠卷'
+
+/integral/activity/list:
+  params:
+    {
+      'current': '1',
+      'pageSize': '10'
+    }
+  method: 'GET'
+  headers: ''
+  token: 1
+  description: '查询活动信息列表成功'
